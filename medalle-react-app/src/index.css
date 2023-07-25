@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --primary-color: rgb(248, 247, 247);
+  --secondary-color:#9ba3b7;
+}
+body{
+  background-color: var(--primary-color);
+}
+.header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+  margin-right: 1rem;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  position: relative;
+}
+nav ul li a::before{
+  content: "";
+  position: absolute;
+  top:-10px;
+  left:50%;
+  height: 3px;
+  width:0;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover:before{
+  width:100%;
+}
+nav ul li a:focus{
+  background-color: var(--secondary-color);
+  opacity: 0.2px;
+  border-radius: 20px;
+}
+nav ul li a:focus::before{
+  width: 0%;
+}
+.search-btn{
+  display: flex;
+}
+.inputText{
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem 0 0 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: black; /*font color of user input*/
+  background-color: var(--primary-color);
+  box-shadow: inset 0 5px 10px var(--secondary-color);
+}
+/*Enter Movie Name font color*/
+.inputText::placeholder{
+  color: black;
+}
+/*search button background is white and the border is box shape not round */
+.search-btn button{
+  background-color: var(--secondary-color);
+  box-shadow: inset 0 5px 10px var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0 2rem 2rem 0;
+  color: black; /*search button icon color*/
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+.containers{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  width: 250px;
+  background-color: var(--secondary-color);
+  margin: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.movie .poster{
+  width: 100%;
+  height: 250px;
+}
+.movie-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-details .box{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.movie-details .title{
+  width: 160px;
+  font-size: 15px;
+  text-align: center;
+}
+.movie-details .overview{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+  background-color: var(--secondary-color);
+  opacity: 0.9;
+  color: white; /*description font color in the overview*/
+  box-sizing: border-box;
+  padding: 1rem;
+  transition: all 0.4s ease-in-out;
+  overflow-y: auto;
+  transform: translateY(101%);
+}
+.movie-details:hover .overview{
+  transform: translateY(0%);
+}
+.rating{
+  background-color: var(--primary-color);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.5);/*shadow of ratings circle shape background inside near the outline*/
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+@media (max-width:900px){
+  .header{
+    background-color: var(--secondary-color);
+    height: 180px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li{
+    padding-top: 10px;
+  }
+  .search-btn{
+    width: 200px;
+    margin-right: 100px;
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Nav */
+.custom-nav .collapse{
+  justify-content: flex-end;
+  font-weight: bold;
+}
+/* End Nav */
+
+/* Login */
+.login {
+  min-height: 100vh;
+  min-width: 179vh;
+  align-items: center;
+  background: linear-gradient(
+  90deg,
+  rgba(2,0,36,0) 10%,
+  rgb(164, 168, 169) 80%,
+  rgb(114, 114, 121) 100%
+  );
+}
+
+.login h6 {
+  margin-top: 15px;
+}
+/* End Login */
+
+/* Register */
+.register{
+  min-height: 100vh;
+  min-width: 179vh;
+  align-items: center;
+  background: linear-gradient(
+  90deg,
+  rgba(2,0,36,0) 10%,
+  rgb(164, 168, 169) 80%,
+  rgb(114, 114, 121) 100%
+  );
+}
+/* End Register */

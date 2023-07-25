@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+  background: rgb(248, 247, 247);
+  color: black;
+}
+
+
+/* Navbar */
+.custom-nav .collapse {
+  justify-content: flex-end;
+}
+
+
+/* Home */
+.home {
+  margin-top: 30px;
+}
+
+
+
+/* Login */
+.login {
+  min-height: 100vh;
+  min-width: 179vh;
+  align-items: center;
+  background: linear-gradient(
+  90deg,
+  rgba(2,0,36,0) 10%,
+  rgb(164, 168, 169) 80%,
+  rgb(114, 114, 121) 100%
+  );
+}
+
+.login h6 {
+  margin-top: 15px;
+}
+
+
+
+/* Register */
+.register {
+  min-height: 100vh;
+  min-width: 179vh;
+  align-items: center;
+  background: linear-gradient(
+  90deg,
+  rgba(2,0,36,0) 10%,
+  rgb(164, 168, 169) 80%,
+  rgb(114, 114, 121) 100%
+  );
+}
+
