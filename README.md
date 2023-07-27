@@ -1,6 +1,6 @@
 # Final_Project_Medalle_Juliet
 ## System Integration Task : The Implementation of Movie API
-This project aims to fully implement a functioning Movie API that generates Movie lists based on category and a search button that will generate a list of the desired movie titles.
+This project aims to fully implement a functioning Movie API that generates Movie lists based on categories and movie titles the user searches for.
 ## Prerequisites
 To begin working on this project, you'll require the installation of the following components on your computer:
 ```
