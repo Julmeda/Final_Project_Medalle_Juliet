@@ -11,16 +11,16 @@ import Card from "./components/Home/Card";
 
 function App() {
   return (
-    <Container>
-     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Protector Component={Home}/>} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/logout" element={<Logout />} />
-        <Route path="/registration" element={<Registration />} />        
-      </Routes>
-      <ToastContainer />
-     </BrowserRouter>
+    <Container> 
+      <BrowserRouter>  
+        <Routes> 
+          <Route path="/" element={<Protector Component={Home} />} />  {/* The root route ("/") is mapped to the "Home" component wrapped inside the "Protector" component */}
+          <Route path="/login" element={<Login />} />  {/* The "/login" route is mapped to the "Login" component */}
+          <Route path="/logout" element={<Logout />} /> {/* The "/logout" route is mapped to the "Logout" component */}
+          <Route path="/registration" element={<Registration />} /> {/* The "/registration" route is mapped to the "Registration" component */}
+        </Routes>
+        <ToastContainer /> {/* The "ToastContainer" component is used to display toast notifications */}
+      </BrowserRouter>
     </Container>
   );
 }
