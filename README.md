@@ -218,7 +218,7 @@ Follow these steps to start the React.js App and Strapi App separately:
 5. If you don't have an account, click the REGISTER button below the login form.
 6. Once you've completed the registration process, you will be redirected back to the LOGIN page.
 7. Use your registered email and password to log in. If successful, you'll be redirected to the HOME page.
-8. You can now explore different movie categories, search for specific movies, and view detailed information about each movie displayed as cards
+8. You can now explore different movie categories, search for specific movies, and view detailed information about each movie displayed as cards.
 9. When you are done using the applications, remember to LOGOUT.
 
 By following these steps, you can effectively start and navigate the React.js and Strapi Apps, perform registration and login actions, and access the HOME page before logging out.
